@@ -6,15 +6,16 @@ Download the project keep it in seperate folder and use following commands to ru
 
 -> Step 2
         Run the following command to run the docker containers
-        docker-compose rm -f
-        docker-compose pull
-        docker-compose up --build -d
+        
+                docker-compose rm -f
+                docker-compose pull
+                docker-compose up --build -d
 
 -> Step 3
         Open seperate terminal in same folder to run database migrations and cron job
 
         run following command to go inside laravel docker container
-            docker exec -it innoscripta-backend-1 sh
+            docker exec -it news-aggregator-backend-1 sh
 
         run database migrations
             php artisan migrate
